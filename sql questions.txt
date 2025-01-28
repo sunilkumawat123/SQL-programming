@@ -1,0 +1,206 @@
+1. What is SQL?
+Answer:
+SQL (Structured Query Language) is a standard programming language used for managing and manipulating relational databases. It allows users to query, update, insert, and delete data, as well as manage database structures.
+
+2. What are the types of SQL commands?
+Answer:
+SQL commands are categorized into:
+
+DDL (Data Definition Language): CREATE, ALTER, DROP
+DML (Data Manipulation Language): INSERT, UPDATE, DELETE
+DQL (Data Query Language): SELECT
+TCL (Transaction Control Language): COMMIT, ROLLBACK, SAVEPOINT
+DCL (Data Control Language): GRANT, REVOKE
+3. What is the difference between SQL and MySQL?
+Answer:
+
+SQL: A language for querying and manipulating databases.
+MySQL: An open-source database management system (DBMS) that uses SQL.
+4. What is a Primary Key?
+Answer:
+A Primary Key is a column (or a set of columns) that uniquely identifies each row in a table. It cannot have NULL values.
+
+5. What is a Foreign Key?
+Answer:
+A Foreign Key is a column in one table that establishes a relationship with the Primary Key of another table.
+
+6. What is the difference between DELETE and TRUNCATE?
+Answer:
+
+DELETE: Removes specific rows based on a condition. It can be rolled back.
+TRUNCATE: Removes all rows from a table. It cannot be rolled back.
+7. What are Joins in SQL?
+Answer:
+Joins are used to combine rows from two or more tables based on a related column. Types include:
+
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+FULL OUTER JOIN
+8. What is Normalization?
+Answer:
+Normalization is the process of organizing data to reduce redundancy and improve data integrity. It involves dividing large tables into smaller ones.
+
+9. What are the different Normal Forms?
+Answer:
+
+1NF (First Normal Form): Remove duplicate columns.
+2NF (Second Normal Form): Remove partial dependency.
+3NF (Third Normal Form): Remove transitive dependency.
+BCNF (Boyce-Codd Normal Form): Special case of 3NF.
+10. What is an Index in SQL?
+Answer:
+An Index improves the speed of data retrieval operations on a database table at the cost of additional storage.
+
+11. What is a View in SQL?
+Answer:
+A View is a virtual table created based on the result of an SQL query. It does not store data but displays data from one or more tables.
+
+
+12. What is a Subquery?
+Answer:
+A Subquery is a query nested within another query. It is executed first, and its result is used by the outer query.
+
+13. What is ACID in SQL?
+Answer:
+ACID stands for:
+
+A: Atomicity (All operations in a transaction succeed or fail together)
+C: Consistency (Data remains consistent after a transaction)
+I: Isolation (Transactions are executed independently)
+D: Durability (Committed transactions persist even after a crash)
+14. What is a Stored Procedure?
+Answer:
+A Stored Procedure is a set of SQL statements saved in the database that can be executed as a single unit.
+
+15. What is a Trigger in SQL?
+Answer:
+A Trigger is an automatic action executed when certain events (like INSERT, UPDATE, DELETE) occur in a database.
+
+16. What is the difference between UNION and UNION ALL?
+Answer:
+
+UNION: Combines results of two queries and removes duplicates.
+UNION ALL: Combines results of two queries but keeps duplicates.
+17. What is the difference between HAVING and WHERE?
+Answer:
+
+WHERE: Filters rows before grouping.
+HAVING: Filters groups after grouping.
+18. What is the difference between a Clustered and Non-Clustered Index?
+Answer:
+
+Clustered Index: Sorts and stores rows physically in the table.
+Non-Clustered Index: Creates a separate structure for index entries.
+
+19. What are Constraints in SQL?
+Answer:
+Constraints enforce rules on data. Common constraints include:
+
+NOT NULL
+UNIQUE
+PRIMARY KEY
+FOREIGN KEY
+CHECK
+20. What is the difference between BETWEEN and IN operators?
+Answer:
+
+BETWEEN: Filters results within a range.
+IN: Filters results matching a specific set of values.
+
+
+21. What is the difference between CHAR and VARCHAR?
+Answer:
+
+CHAR: Fixed-length string, space-padded if the data is shorter than the defined length.
+VARCHAR: Variable-length string, stores only the entered data without padding.
+22. What is a Self Join?
+Answer:
+A Self Join is a join where a table is joined with itself. It is used to compare rows within the same table.
+
+23. What is the difference between DISTINCT and GROUP BY?
+Answer:
+
+DISTINCT: Removes duplicate rows from the result set.
+GROUP BY: Groups rows based on a specific column(s) and can be used with aggregate functions.
+24. What are Aggregate Functions in SQL?
+Answer:
+Aggregate functions perform calculations on a set of values and return a single value. Examples include:
+
+COUNT()
+SUM()
+AVG()
+MAX()
+MIN()
+25. What is a NULL value in SQL?
+Answer:
+NULL represents missing or unknown data in a column. It is not equivalent to zero or an empty string.
+
+26. What is the difference between INNER JOIN and OUTER JOIN?
+Answer:
+
+INNER JOIN: Returns only matching rows from both tables.
+OUTER JOIN: Returns all rows from one table and matching rows from the other.
+27. What is a Cursor in SQL?
+Answer:
+A Cursor is a database object used to retrieve data row-by-row from a result set, rather than retrieving it all at once.
+
+28. What is the difference between RANK() and DENSE_RANK()?
+Answer:
+
+RANK(): Assigns a unique rank to each row, with gaps if ranks are tied.
+DENSE_RANK(): Assigns a unique rank to each row, without gaps for tied ranks.
+29. What are Transactions in SQL?
+Answer:
+A Transaction is a sequence of SQL operations executed as a single unit of work, ensuring ACID properties.
+
+30. What is the difference between UNION and JOIN?
+Answer:
+
+UNION: Combines the result sets of two queries vertically.
+JOIN: Combines data from multiple tables horizontally based on a related column.
+
+31. What is the purpose of the EXISTS clause?
+Answer:
+The EXISTS clause checks if a subquery returns any rows and returns TRUE or FALSE.
+
+32. What is a Deadlock in SQL?
+Answer:
+A Deadlock occurs when two or more transactions hold resources that each other needs, causing them to wait indefinitely.
+
+33. What is the difference between DROP and DELETE commands?
+Answer:
+
+DROP: Removes the table entirely from the database.
+DELETE: Removes rows from a table based on a condition.
+34. What is a Schema in SQL?
+Answer:
+A Schema is a logical structure that organizes database objects such as tables, views, and stored procedures.
+
+35. What is a Composite Key?
+Answer:
+A Composite Key is a combination of two or more columns used to uniquely identify a row in a table.
+
+36. What is a Temporary Table?
+Answer:
+A Temporary Table is a table created for temporary storage of data during a session or transaction.
+
+37. What is the difference between Stored Procedures and Functions?
+Answer:
+
+Stored Procedures: Can return multiple results and modify data.
+Functions: Return only one value and cannot modify data.
+38. What is Referential Integrity?
+Answer:
+Referential Integrity ensures that relationships between tables remain consistent, typically enforced using FOREIGN KEYS.
+
+39. What is the difference between IS NULL and = NULL?
+Answer:
+
+IS NULL: Checks if a column has a NULL value.
+= NULL: Invalid syntax; cannot compare NULL directly with =.
+40. What is the difference between Static and Dynamic SQL?
+Answer:
+
+Static SQL: SQL statements are fixed at compile-time.
+Dynamic SQL: SQL statements are constructed and executed at runtime.
